@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Antora UI Customizations :: Development Notebooks</title>
+    <link rel="canonical" href="https://neveruntilnow.com/notes/latest/jamstack/antora-ui-customizations.html">
+    <link rel="prev" href="configure-sidebar-toc.html">
+    <link rel="next" href="add-nav-buttons.html">
+    <meta name="generator" content="Antora 2.3.1">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!-- <a class="navbar-item" href="https://neveruntilnow.com">Development Notebooks</a> -->
+      <a class="navbar-item" href="../../../index.html"><img src="../../../_/img/logo.png">&nbsp;Development Notebooks</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <!-- Add a Home button to the navbar -->
+        <a class="navbar-item" href="../../../index.html">Home</a>
+        <!-- Add pagination buttons to the header -->
+        <div class="navbar-item">
+          <span class="control"><a class="button is-primary" href="../../../notes/latest/jamstack/configure-sidebar-toc.html">Prev</a></span>&nbsp;&nbsp;
+          <span class="control"><a class="button is-primary" href="../../../notes/latest/jamstack/add-nav-buttons.html">Next</a></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="notes" data-version="latest">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Subject Matter</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../to-do-list.html">To Do List</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">iOS</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ios/ios-doc-links.html">iOS, Swift, Xcode Doc Links</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Swift</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/ios-app-dev-bootcamp.html">The Complete iOS App Development Bootcamp</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SpriteKit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/intro-to-spritekit.html">Introduction to SpriteKit</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/create-2d-games.html">How to Create 2D Games with SpriteKit and Swift 4</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/intro-to-game-dev.html">Introduction to iOS Game Development with SpriteKit and Swift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/dive-into-spritekit.html">Dive into SpriteKit</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SwiftUI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/swiftui-complete-guide.html">SwiftUI - The Complete Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/declarative-interfaces.html">SwiftUI - Declarative Interfaces for any Apple Device</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Misc</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/kit-notes.html">StoryTeller&#8217;s Kit Notes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="antora-doc-links.html">Antora Doc Links</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text"><a href="https://github.com/civilin?tab=repositories" target="_blank" rel="noopener"><em>My GitHub Repos</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Customize the TOC</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="override-document-title.html">Override title shown in the TOC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="add-url-to-toc.html">Add a URL to the TOC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configure-sidebar-toc.html">Configure the sidebar TOC</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Customize Antora Default UI</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="antora-ui-customizations.html">Antora UI Customizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="add-nav-buttons.html">Add buttons that navigate to next, previous, or parent topics</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Publish to GitHub Pages</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#publish-to-github-pages">Publish to GitHub Pages</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Asciidoctor</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../asciidoctor/asciidoctor-doc-links.html">Asciidoctor Doc Links</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../asciidoctor/using-html-in-asciidoc-files.html">Using HTML in Asciidoc files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../asciidoctor/home-page-cards-prototype.html">Prototype landing page cards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../asciidoctor/iframe.html">Using iframes in Asciidoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../asciidoctor/iframe-by-url.html">Click hyperlink to load an iframe in AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../asciidoctor/select-an-article-to-display.html">Select an article to display</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../asciidoctor/multimedia-example.html">Multimedia</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../asciidoctor/physics.html">Animation that uses Physics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 4</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module4/about-module4.html">About Module 4</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module4/test.html">Test Document</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 5</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module5/about-module5.html">About Module 5</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 6</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module6/about-module6.html">About Module 6</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Subject Matter</span>
+    <span class="version">latest</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Subject Matter</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Subject Matter</a></li>
+    <li>Antora</li>
+    <li>Customize Antora Default UI</li>
+    <li><a href="antora-ui-customizations.html">Antora UI Customizations</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Antora UI Customizations</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>To customize the interface for this project:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_download_a_clean_copy_of_antora_default_ui"><a class="anchor" href="#_download_a_clean_copy_of_antora_default_ui"></a>Download a clean copy of Antora Default UI</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Download a copy of <a href="https://gitlab.com/antora/antora-ui-default" target="_blank" rel="noopener">Antora Default UI</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_modify_the_navbar"><a class="anchor" href="#_modify_the_navbar"></a>Modify the navbar</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Replace <code>src/partials/header-content.hbs</code> with the code below. These changes add an icon to the navbar, remove items we don&#8217;t want, and add navigation buttons.</p>
+<div class="listingblock">
+<div class="title">src/partials/header-content.hbs</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;header class="header"&gt;
+  &lt;nav class="navbar"&gt;
+    &lt;div class="navbar-brand"&gt;
+      &lt;!-- &lt;a class="navbar-item" href="{{or site.url (or siteRootUrl siteRootPath)}}"&gt;{{site.title}}&lt;/a&gt; --&gt;
+      &lt;a class="navbar-item" href="{{siteRootPath}}/index.html"&gt;&lt;img src="{{uiRootPath}}/img/nun_logo.png"&gt;&amp;nbsp;{{site.title}}&lt;/a&gt;
+      &lt;button class="navbar-burger" data-target="topbar-nav"&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;/span&gt;
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div id="topbar-nav" class="navbar-menu"&gt;
+      &lt;div class="navbar-end"&gt;
+        &lt;!-- Add a Home button to the navbar --&gt;
+        &lt;a class="navbar-item" href="{{siteRootPath}}/index.html"&gt;Home&lt;/a&gt;
+        &lt;!-- Add pagination buttons to the header --&gt;
+        &lt;div class="navbar-item"&gt;
+          {{#if page.parent}}
+          &lt;span class="control"&gt;&lt;a class="button is-primary" href="{{{siteRootPath}}}{{{page.parent.url}}}"&gt;Parent&lt;/a&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;
+          {{/if}}
+          {{#if page.previous}}
+          &lt;span class="control"&gt;&lt;a class="button is-primary" href="{{{siteRootPath}}}{{{page.previous.url}}}"&gt;Prev&lt;/a&gt;&lt;/span&gt;&amp;nbsp;&amp;nbsp;
+          {{/if}}
+          {{#if page.next}}
+          &lt;span class="control"&gt;&lt;a class="button is-primary" href="{{{siteRootPath}}}{{{page.next.url}}}"&gt;Next&lt;/a&gt;&lt;/span&gt;
+          {{/if}}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Save changes and close the file.</p>
+</div>
+</li>
+<li>
+<p>Copy <strong>logo.png</strong> to the <code>src/img</code> folder.</p>
+</li>
+<li>
+<p>To change the color of the navbar, edit <code>src/css/header.css</code>. Change the background color for .navbar to <strong>navy</strong>.</p>
+<div class="listingblock">
+<div class="title">src/css/header.css</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.navbar {
+  background: navy;</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_add_info_and_navigation_options_to_the_footer"><a class="anchor" href="#_add_info_and_navigation_options_to_the_footer"></a>Add info and navigation options to the footer</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Edit <code>src/partials/footer-content.hbs</code> to add navigation options the footer, with a table that displays information about the current page. Set the contents of this file to the listing below.</p>
+<div class="listingblock">
+<div class="title">src/partials/footer-content.hbs</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;footer class="footer"&gt;
+&lt;!-- &lt;p style="text-align: center;"&gt;Welcome to {{site.title}}&lt;/p&gt; --&gt;
+&lt;p style="text-align: center;"&gt;
+  &lt;a href="#"&gt;Top&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+  {{#if page.parent}}
+  &lt;a href="{{{siteRootPath}}}{{{page.parent.url}}}"&gt;Parent&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+  {{/if}}
+  {{#if page.previous}}
+  &lt;a href="{{{siteRootPath}}}{{{page.previous.url}}}"&gt;Prev&lt;/a&gt;&amp;nbsp;&amp;nbsp;
+  {{/if}}
+  {{#if page.next}}
+  &lt;a href="{{{siteRootPath}}}{{{page.next.url}}}"&gt;Next&lt;/a&gt;
+  {{/if}}
+&lt;/p&gt;
+&lt;!-- see also https://docs.antora.org/antora/2.3/page/intrinsic-attributes/#site-and-configuration-attributes --&gt;
+&lt;style&gt;
+  table, th, td {
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+&lt;/style&gt;
+&lt;table style="width:100%"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Page Title&lt;/th&gt;
+    &lt;th&gt;File Name&lt;/th&gt;
+    &lt;th&gt;Component&lt;/th&gt;
+    &lt;th&gt;Module&lt;/th&gt;
+    &lt;th&gt;Version&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;{{page.title}}&lt;/td&gt;
+    &lt;td&gt;{{page.url}}&lt;/td&gt;
+    &lt;td&gt;{{page.component.title}}&lt;/td&gt;
+    &lt;td&gt;{{page.module}}&lt;/td&gt;
+    &lt;td&gt;{{page.version}}&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;/footer&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Save changes and close the file.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_run_gulp_pack"><a class="anchor" href="#_run_gulp_pack"></a>Run gulp pack</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The last step is to pack the file, using the <code>gulp pack</code> command. Packing ensures that the UI is valid before creating <code>build\ui-bundle.zip</code>--the UI file in your playbook.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open terminal.</p>
+</li>
+<li>
+<p>Type cd followed by a space, followed by the path to the Antora UI folder. Press enter.</p>
+</li>
+<li>
+<p>Enter <code>gulp pack</code>. If the pack succeeds, you&#8217;re ready to go.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_what_to_do_if_gulp_pack_fails"><a class="anchor" href="#_what_to_do_if_gulp_pack_fails"></a>What to do if gulp pack fails</h3>
+<div class="paragraph">
+<p>Sometimes, a UI will no longer pack. One solution is to download the default UI, edit its files as described above, and then to execute <code>npm install</code> from a terminal session inside the UI folder. Alternately, replace the node_modules folder in your custom UI with node_modules from a clean Antora default UI.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_summary"><a class="anchor" href="#_summary"></a>Summary</h2>
+<div class="sectionbody">
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>Customization changes the following files:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>src/css/header.css</strong> is updated to change the navbar color.</p>
+</li>
+<li>
+<p><strong>src/img/logo.png</strong> is added as a new graphic.</p>
+</li>
+<li>
+<p><strong>src/partials/header-content.hbs</strong> is modified to take out and add items.</p>
+</li>
+<li>
+<p><strong>src/partials/footer-content.hbs</strong> is modified to add navigation options and info about the current page.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Because node_modules can get screwed up, it&#8217;s good practice to keep track of changes made to your UI, so that you can recreate your work.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="configure-sidebar-toc.html">Configure the sidebar TOC</a></span>
+  <span class="next"><a href="add-nav-buttons.html">Add buttons that navigate to next, previous, or parent topics</a></span>
+</nav>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+<!-- <p style="text-align: center;">Welcome to Development Notebooks</p> -->
+<p style="text-align: center;">
+  <a href="#">Top</a>&nbsp;&nbsp;
+  <a href="../../../notes/latest/jamstack/configure-sidebar-toc.html">Prev</a>&nbsp;&nbsp;
+  <a href="../../../notes/latest/jamstack/add-nav-buttons.html">Next</a>
+</p>
+<!--
+<p style="text-align: center;"><b>About</b>: https://neveruntilnow.com/notes/latest/jamstack/antora-ui-customizations.html</p>
+<p><b>Site</b>: Development Notebooks<br>
+<b>Component Name: notes<br>
+<b>Module</b>: jamstack<br>
+<b>Component</b>: Subject Matter<br>
+<b>Page Title</b>: Antora UI Customizations<br>
+<b>Component Version</b>: latest</p>
+<hr>
+-->
+<!-- see also https://docs.antora.org/antora/2.3/page/intrinsic-attributes/#site-and-configuration-attributes -->
+<style>
+  table, th, td {
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+</style>
+<!-- <p style="text-align: center;"><b>About</b>: https://neveruntilnow.com/notes/latest/jamstack/antora-ui-customizations.html</p> -->
+<!-- <p style="text-align: center;"><b>About</b>: /notes/latest/jamstack/antora-ui-customizations.html</p> -->
+<table style="width:100%">
+  <tr>
+    <th>Page Title</th>
+    <th>File Name</th>
+    <th>Component</th>
+    <th>Module</th>
+    <th>Version</th>
+  </tr>
+  <tr>
+    <td>Antora UI Customizations</td>
+    <td>/notes/latest/jamstack/antora-ui-customizations.html</td>
+    <td>Subject Matter</td>
+    <td>jamstack</td>
+    <td>latest</td>
+  </tr>
+</table>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
