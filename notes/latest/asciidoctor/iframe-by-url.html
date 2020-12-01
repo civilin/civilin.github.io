@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Click hyperlink to load an iframe in AsciiDoc :: Development Notebooks</title>
+    <link rel="canonical" href="https://neveruntilnow.com/notes/latest/asciidoctor/iframe-by-url.html">
+    <link rel="prev" href="iframe.html">
+    <link rel="next" href="select-an-article-to-display.html">
+    <meta name="generator" content="Antora 2.3.1">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!-- <a class="navbar-item" href="https://neveruntilnow.com">Development Notebooks</a> -->
+      <a class="navbar-item" href="../../../index.html"><img src="../../../_/img/logo.png">&nbsp;Development Notebooks</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <!-- Add a Home button to the navbar -->
+        <a class="navbar-item" href="../../../index.html">Home</a>
+        <!-- Add pagination buttons to the header -->
+        <div class="navbar-item">
+          <span class="control"><a class="button is-primary" href="../../../notes/latest/asciidoctor/iframe.html">Parent</a></span>&nbsp;&nbsp;
+          <span class="control"><a class="button is-primary" href="../../../notes/latest/asciidoctor/iframe.html">Prev</a></span>&nbsp;&nbsp;
+          <span class="control"><a class="button is-primary" href="../../../notes/latest/asciidoctor/select-an-article-to-display.html">Next</a></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="notes" data-version="latest">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Subject Matter</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../to-do-list.html">To Do List</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">iOS</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../ios/ios-doc-links.html">iOS, Swift, Xcode Doc Links</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Swift</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../ios/ios-app-dev-bootcamp.html">iOS 13 &amp; Swift 5 - The Complete iOS App Development Bootcamp</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="_attachments/iOS-Syllabus.pdf" target="_blank" rel="noopener"><em>iOS Course Syllabus</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="_attachments/swift-5-cheat-sheet.pdf" target="_blank" rel="noopener"><em>Swift Cheat Sheet</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="_attachments/map-of-xcode-ios13.pdf" target="_blank" rel="noopener"><em>Map of Xcode</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="_attachments/12-Rules-to-Learn-to-Code-eBook-Updated-26.11.18.pdf" target="_blank" rel="noopener"><em>12 Rules to Learn to Code</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions/" target="_blank" rel="noopener"><em>iPhone Screen Resolutions</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="https://appicon.co/#app-icon/" target="_blank" rel="noopener"><em>App Icon Generator</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="https://colorhunt.co" target="_blank" rel="noopener"><em>Color Palettes for Designers and Artists</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <span class="nav-text"><a href="_attachments/Xcode-Sideloading-Troubleshooting.pdf" target="_blank" rel="noopener"><em>Sideloading (Running app on device) Troubleshooting Flow Chart</em></a></span>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SpriteKit</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/intro-to-spritekit.html">Introduction to SpriteKit - Build practical games!</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/create-2d-games.html">How to Create iOS 2D Games with SpriteKit and Swift 4</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/intro-to-game-dev.html">Introduction to iOS Game Development with SpriteKit and Swift</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/dive-into-spritekit.html">Dive into SpriteKit - You Design the Game</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">SwiftUI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/swiftui-complete-guide.html">SwiftUI - The Complete Guide - Build iOS Apps with SwiftUI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/declarative-interfaces.html">SwiftUI - Declarative Interfaces for any Apple Device</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/swiftui-learn-how-to-build-apps.html">SwiftUI - Learn How to Build Beautiful, Robust, Apps</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Misc</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ios/kit-notes.html">StoryTeller&#8217;s Kit Notes</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Antora</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../jamstack/antora-doc-links.html">Antora Doc Links</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text"><a href="https://github.com/civilin?tab=repositories" target="_blank" rel="noopener"><em>My GitHub Repos</em></a></span>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Customize the TOC</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/override-document-title.html">Override title shown in the TOC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/add-url-to-toc.html">Add a URL to the TOC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/add-pdf-to-toc.html">Add a PDF to the TOC</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/configure-sidebar-toc.html">Configure the sidebar TOC</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Customize Antora Default UI</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/antora-ui-customizations.html">Antora UI Customizations</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/add-nav-buttons.html">Add buttons that navigate to next, previous, or parent topics</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">GitHub Pages</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../jamstack/publish-to-github-pages.html">Publish to GitHub Pages</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Asciidoctor</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="asciidoctor-doc-links.html">Asciidoctor Doc Links</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using-html-in-asciidoc-files.html">Using HTML in Asciidoc files</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="home-page-cards-prototype.html">Prototype landing page cards</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="iframe.html">Using iframes in Asciidoc</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="iframe-by-url.html">Click hyperlink to load an iframe in AsciiDoc</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="select-an-article-to-display.html">Select an article to display</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="multimedia-example.html">Multimedia</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="physics.html">Animation that uses Physics</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 4</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module4/about-module4.html">About Module 4</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module4/test.html">Test Document</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 5</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module5/about-module5.html">About Module 5</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 6</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../module6/about-module6.html">About Module 6</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Subject Matter</span>
+    <span class="version">latest</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Subject Matter</span>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">latest</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Subject Matter</a></li>
+    <li>Asciidoctor</li>
+    <li><a href="using-html-in-asciidoc-files.html">Using HTML in Asciidoc files</a></li>
+    <li><a href="iframe.html">Using iframes in Asciidoc</a></li>
+    <li><a href="iframe-by-url.html">Click hyperlink to load an iframe in AsciiDoc</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Click hyperlink to load an iframe in AsciiDoc</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click a link to load a page in the iframe:<br>
+<br></p>
+</div>
+<p><a href="http://www.bing.com/" target="frame">Bing</a></p>
+<p><a href="https://antora.org/" target="frame">Antora.org</a></p>
+<p><a href="https://asciidoctor-docs.netlify.app/" target="frame">The Docs @ Asciidoctor</a></p>
+<p><a href="https://asciidoctor.org/" target="frame">AsciiDoctor.org</a></p>
+<p><a href="https://pressureluckcooking.com/recipe/instant-pot-roast/" target="frame">Pot Roast Recipe</a></p>
+<br>
+<hr>
+
+<!-- HTML to embed an iframe -->
+<div class="iframe-container">
+  <iframe name="frame" src="https://www.usps.com/" frameborder="0"></iframe>
+</div>
+
+<!-- CSS to make the iframe responsive -->
+<style>
+.iframe-container {
+overflow: hidden;
+padding-top: 100%;
+position: relative;
+}
+.iframe-container iframe {
+ border: 0;
+ height: 100%;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+}
+</style>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tryit"><a class="anchor" href="#tryit"></a>Source Code</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To try this technique, copy the code below into an AsciiDoc file. Then insert your choice of URL. This technique was adapted from <a href="https://benmarshall.me/responsive-iframes/" class="bare" target="_blank" rel="noopener">https://benmarshall.me/responsive-iframes/</a>.</p>
+</div>
+<div class="listingblock">
+<div class="title">Copy this code into your AsciiDoc file:</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">++++
+&lt;p&gt;&lt;a href="http://www.bing.com/" target="frame"&gt;Bing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://antora.org/" target="frame"&gt;Antora.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://asciidoctor-docs.netlify.app/" target="frame"&gt;The Docs @ Asciidoctor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://asciidoctor.org/" target="frame"&gt;AsciiDoctor.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pressureluckcooking.com/recipe/instant-pot-roast/" target="frame"&gt;Pot Roast Recipe&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;hr&gt;
+
+&lt;!-- HTML to embed an iframe --&gt;
+&lt;div class="iframe-container"&gt;
+  &lt;iframe name="frame" src="https://www.usps.com/" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;!-- CSS to make the iframe responsive --&gt;
+&lt;style&gt;
+.iframe-container {
+overflow: hidden;
+padding-top: 100%;
+position: relative;
+}
+.iframe-container iframe {
+ border: 0;
+ height: 100%;
+ left: 0;
+ position: absolute;
+ top: 0;
+ width: 100%;
+}
+&lt;/style&gt;
+++++</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Some websites do not allow their pages to be displayed inside an iframe. If you see a message saying that the connection was refused, you cannot use that address in an iframe.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="iframe.html">Using iframes in Asciidoc</a></span>
+  <span class="next"><a href="select-an-article-to-display.html">Select an article to display</a></span>
+</nav>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+<!-- <p style="text-align: center;">Welcome to Development Notebooks</p> -->
+<p style="text-align: center;">
+  <a href="#">Top</a>&nbsp;&nbsp;
+  <a href="../../../notes/latest/asciidoctor/iframe.html">Parent</a>&nbsp;&nbsp;
+  <a href="../../../notes/latest/asciidoctor/iframe.html">Prev</a>&nbsp;&nbsp;
+  <a href="../../../notes/latest/asciidoctor/select-an-article-to-display.html">Next</a>
+</p>
+<!--
+<p style="text-align: center;"><b>About</b>: https://neveruntilnow.com/notes/latest/asciidoctor/iframe-by-url.html</p>
+<p><b>Site</b>: Development Notebooks<br>
+<b>Component Name: notes<br>
+<b>Module</b>: asciidoctor<br>
+<b>Component</b>: Subject Matter<br>
+<b>Page Title</b>: Click hyperlink to load an iframe in AsciiDoc<br>
+<b>Component Version</b>: latest</p>
+<hr>
+-->
+<!-- see also https://docs.antora.org/antora/2.3/page/intrinsic-attributes/#site-and-configuration-attributes -->
+<style>
+  table, th, td {
+  padding: 10px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  }
+</style>
+<!-- <p style="text-align: center;"><b>About</b>: https://neveruntilnow.com/notes/latest/asciidoctor/iframe-by-url.html</p> -->
+<!-- <p style="text-align: center;"><b>About</b>: /notes/latest/asciidoctor/iframe-by-url.html</p> -->
+<table style="width:100%">
+  <tr>
+    <th>Page Title</th>
+    <th>File Name</th>
+    <th>Component</th>
+    <th>Module</th>
+    <th>Version</th>
+  </tr>
+  <tr>
+    <td>Click hyperlink to load an iframe in AsciiDoc</td>
+    <td>/notes/latest/asciidoctor/iframe-by-url.html</td>
+    <td>Subject Matter</td>
+    <td>asciidoctor</td>
+    <td>latest</td>
+  </tr>
+</table>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
